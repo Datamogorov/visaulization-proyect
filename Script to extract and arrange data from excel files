@@ -1,0 +1,123 @@
+import pandas as pd
+#########################Enero#################################################
+January = r'C:\Users\Alexander\Documents\Datostesis\archivos\1 Parametros V-17ST2 (J) Enero-2012.xlsx'
+A = pd.read_excel(January, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Enero = pd.concat(A, sort= False)
+Enero['Date'] = pd.to_datetime(pd.date_range(start='01/01/2012', periods=len(Enero), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\A_Enero.xlsx')
+Enero.to_excel(writer)
+writer.save()
+
+########################Febrero################################################
+February = r'C:\Users\Alexander\Documents\Datostesis\archivos\2 Parametros V-17ST2 (J) Febrero-2012.xlsx'
+B = pd.read_excel(February, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Febrero= pd.concat(B, sort= False)
+Febrero['Date'] = pd.to_datetime(pd.date_range(start='02/01/2012', periods=len(Febrero), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\B_Febrero.xlsx')
+Febrero.to_excel(writer)
+writer.save()
+
+###########################Marzo################################################
+March = r'C:\Users\Alexander\Documents\Datostesis\archivos\3 Parametros V-17ST2 (J) Marzo-2012.xlsx'
+C = pd.read_excel(March, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Marzo= pd.concat(C, sort= False)
+Marzo['Date'] = pd.to_datetime(pd.date_range(start='03/01/2012', periods=len(Marzo), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\C_Marzo.xlsx')
+Marzo.to_excel(writer)
+writer.save()
+
+############################Abril################################################
+
+April = r'C:\Users\Alexander\Documents\Datostesis\archivos\4 Parametros V-17ST2 (J) Abril-2012.xlsx'
+D = pd.read_excel(April, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Abril= pd.concat(D, sort= False)
+Abril['Date'] = pd.to_datetime(pd.date_range(start='04/01/2012', periods=len(Abril), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\D_Abril.xlsx')
+Abril.to_excel(writer)
+writer.save()
+
+############################Mayo################################################
+May = r'C:\Users\Alexander\Documents\Datostesis\archivos\5 Parametros V-17ST2 (J) Mayo-2012.xlsx'
+E = pd.read_excel(May, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Mayo= pd.concat(E, sort= False)
+Mayo['Date'] = pd.to_datetime(pd.date_range(start='05/01/2012', periods=len(Mayo), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\E_Mayo.xlsx')
+Mayo.to_excel(writer)
+writer.save()
+
+############################Junio################################################
+
+June = r'C:\Users\Alexander\Documents\Datostesis\archivos\6 Parametros V-17ST2 (J) Junio-2012.xlsx'
+F = pd.read_excel(June, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Junio= pd.concat(F, sort= False)
+Junio['Date'] = pd.to_datetime(pd.date_range(start='06/01/2012', periods=len(Junio), freq='D'))
+#F['Date']=cdf['Date'].astype('datetime64[D]')
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\F_Junio.xlsx')
+Junio.to_excel(writer)
+writer.save()
+
+############################Julio################################################
+
+July = r'C:\Users\Alexander\Documents\Datostesis\archivos\7 Parametros V-17ST2 (J) Julio-2012.xlsx'
+G = pd.read_excel(July, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Julio= pd.concat(G, sort= False)
+Julio['Date'] = pd.to_datetime(pd.date_range(start='07/01/2012', periods=len(Julio), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\G_Julio.xlsx')
+Julio.to_excel(writer)
+writer.save()
+##############################Agosto################################################
+August = r'C:\Users\Alexander\Documents\Datostesis\archivos\8 Parametros V-17ST2 (J) Agosto-2012.xlsx'
+H = pd.read_excel(August, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Agosto= pd.concat(H, sort= False)
+Agosto['Date'] = pd.to_datetime(pd.date_range(start='08/01/2012', periods=len(Agosto), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\H_Agosto.xlsx')
+Agosto.to_excel(writer)
+writer.save()
+##############################Septiembre################################################
+September = r'C:\Users\Alexander\Documents\Datostesis\archivos\9 Parametros V-17ST2 (J) Septiembre-2012.xlsx'
+I = pd.read_excel(September, skiprows= 19, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Septiembre= pd.concat(I, sort= False)
+Septiembre['Date'] = pd.to_datetime(pd.date_range(start='09/01/2012', periods=len(Septiembre), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\I_Septiembre.xlsx')
+Septiembre.to_excel(writer)
+writer.save()
+##############################Octubre################################################
+October = r'C:\Users\Alexander\Documents\Datostesis\archivos\10 Parametros V-17ST2 (J) Octubre-2012.xlsx'
+J = pd.read_excel(October, skiprows= 23, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Octubre= pd.concat(J, sort= False)
+Octubre['Date'] = pd.to_datetime(pd.date_range(start='10/01/2012', periods=len(Octubre), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\J_Octubre.xlsx')
+Octubre.to_excel(writer)
+writer.save()
+##############################Noviembre################################################
+November = r'C:\Users\Alexander\Documents\Datostesis\archivos\11 Parametros V-17ST2 (J) Noviembre-2012.xlsx'
+K = pd.read_excel(November, skiprows= 23, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Noviembre= pd.concat(K, sort= False)
+Noviembre['Date'] = pd.to_datetime(pd.date_range(start='11/01/2012', periods=len(Noviembre), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\K_Noviembre.xlsx')
+Noviembre.to_excel(writer)
+writer.save()
+###########################Diciembre############################################
+December = r'C:\Users\Alexander\Documents\Datostesis\archivos\12 Parametros V-17ST2 (J) Diciembre-2012.xlsx'
+L = pd.read_excel(December, skiprows= 23, sheet_name= None, usecols= 15, nrows=1, header= None, names= ["Date", "Flow","WHP",	"FL","Casing", "WHT","Phase-A",	"Phase-B", "Phase-C", 	"BHP", 	"BHT",	"Discharge", "Motor T°","Vib.",	"Freq."	, "BSW Mass"], index_col=None)
+Diciembre= pd.concat(L, sort= False)
+Diciembre['Date'] = pd.to_datetime(pd.date_range(start='12/01/2012', periods=len(Diciembre), freq='D'))
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\L_Diciembre.xlsx')
+Diciembre.to_excel(writer)
+writer.save()
+
+
+import pandas as pd
+import glob 
+import os
+path= r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos'
+filenames = glob.glob(path + "/*.xlsx")
+concat_all_sheets_all_files = pd.DataFrame()
+for file in filenames:  
+    am = pd.read_excel(file, sheet_name= None, skiprows=None, nrows=None, usecols= None, header = 0, index_col=None)
+    concat_all_sheets_single_file = pd.concat(am, sort=False)
+    concat_all_sheets_all_files= concat_all_sheets_all_files.append(concat_all_sheets_single_file)
+writer = pd.ExcelWriter(r'C:\Users\Alexander\Documents\Datostesis\archivos\unamos\Pozo_13_2020.xlsx')
+concat_all_sheets_all_files.to_csv(writer)
+writer. save()
+
